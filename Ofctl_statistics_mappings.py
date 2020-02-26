@@ -1,0 +1,5 @@
+Switch_DPIDs = 'stats/switches'
+Switch_Description = 'stats/desc/{}'
+Switch_Flow = '/stats/flow/{}'
+Switch_Table_Features = 'stats/tablefeatures/{}'
+Switch_Port_Stats = 'stats/port/{}'

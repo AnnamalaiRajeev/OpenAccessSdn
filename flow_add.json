@@ -1,0 +1,25 @@
+{
+"dpid": 0,
+"priority": 0,
+"table_id": 0,
+"match":{
+    "in_port":1,
+    "eth_type": 2048,
+    "ipv4_src": "192.168.0.1"
+        },
+"actions":[
+     {
+        "type": "PUSH_VLAN",
+        "ethertype": 33024
+    },
+    {
+        "type": "SET_FIELD",
+        "field": "vlan_vid",
+        "value": 4102
+    },
+    {
+        "type":"GOTO_TABLE",
+        "table_id": 2
+    }
+    ]
+}
